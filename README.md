@@ -92,7 +92,7 @@ $.ajax({
 
 ## URL관련 전송데이터 설명
 
-### `templarUrl`: string(http url)
+### `templateUrl`: string(http url)
 판PDF만들때 쓰일 템플릿 파일의 주소입니다.
 
 `https://s3.ap-northeast-2.amazonaws.com/overlord-res/templates/<번호>.tem`
