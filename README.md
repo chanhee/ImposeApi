@@ -136,7 +136,7 @@ $.ajax({
     "isFailed": false,
 
     // 판PDF와 도무송칼 EPS
-    "urls": [
+    "fileUrls": [
         { "kind": "pan", "url": "http://www.dddd.com/alskdjflaskdf.pdf" }
         { "kind": "sg-sc", "url": "http://www.dddd.com/alskdjflaskdf.sg-sc.pdf" }
     ]
