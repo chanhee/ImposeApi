@@ -64,6 +64,10 @@ var params = {
 
     // 뒷면을 EPS파일로 변환함 (도무송일때는 true) [필수]
     "convertBackSideToEps": true,
+    
+    // 템플릿안에 설정되어 있는 그리드에 내용물을 맞춰서 정렬합니다. (그리드에 맞출때는 true) [필수]
+    // 도무송 스티커 같은 그리드가 없는 템플릿에는 세팅하면 에러가 발생합니다.
+    "fitToGrid": true,
 
     // 지도판을 만든다. (현재 사용되지 않음) [무시]
     "writeMap": false,
