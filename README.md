@@ -2,7 +2,7 @@
 
 디지털 도무송 스티커에 대한 임포지션을 하려면 다음의 주소로 `POST` Http요청을 보내면 됩니다.
 
-`http://overlord.dtp21.com/api/v1/queue/push-imposition`
+`https://overlord.dtp21.com/api/v1/queue/push-imposition`
 
 입력데이터는 `JSON`형식으로 다음과 같습니다. Ajax로 전송시 `Content-Type: application/json; charset=utf-8` 으로 지정되어야 합니다.
 
@@ -12,7 +12,7 @@ var params = {
     "templateUrl": "https://s3.ap-northeast-2.amazonaws.com/overlord-res/templates/135.tem",
 
     // 밑의 항목에서 자세하게 설명합니다. [필수]
-    "callbackUrl": "http://overlord.dtp21.com/api/v1/test/batch-callback",
+    "callbackUrl": "https://overlord.dtp21.com/api/v1/test/batch-callback",
 
     // 판번호 [필수]
     "number": "PPTT-170627-104401",
@@ -38,7 +38,7 @@ var params = {
         "sheets": 100,
 
         // 하리꼬미할 PDF주소 (Http URL) [필수]
-        "pdfUrl": "http://overlord-order-pdf.s3.ap-northeast-2.amazonaws.com/3FED/pr170622021301_korea_24ea.pdf",
+        "pdfUrl": "https://overlord-order-pdf.s3.ap-northeast-2.amazonaws.com/3FED/pr170622021301_korea_24ea.pdf",
 
         // 실제파일이름 (pdfUrl의 마지막부분을 넣으면 됩니다.) [필수]
         "fileName": "pr170622021301_korea_24ea.pdf",
@@ -79,7 +79,7 @@ var params = {
 
 // CORS를 사용하기 때문에 서버에서 전송하는게 아니라면 미리 오버로드쪽에 도메인을 등록해야 합니다.
 // jch0220@gmail.com 으로 연락주시면 됩니다.
-var url = 'http://overlord.dtp21.com/api/v1/queue/push-imposition';
+var url = 'https://overlord.dtp21.com/api/v1/queue/push-imposition';
 $.ajax({
     url: url,
     dataType: "json",
@@ -146,8 +146,8 @@ $.ajax({
 
     // 판PDF와 도무송칼 EPS
     "fileUrls": [
-        { "kind": "pan", "url": "http://www.dddd.com/alskdjflaskdf.pdf" }
-        { "kind": "sg-sc", "url": "http://www.dddd.com/alskdjflaskdf.sg-sc.pdf" }
+        { "kind": "pan", "url": "https://www.dddd.com/alskdjflaskdf.pdf" }
+        { "kind": "sg-sc", "url": "https://www.dddd.com/alskdjflaskdf.sg-sc.pdf" }
     ]
 }
 
